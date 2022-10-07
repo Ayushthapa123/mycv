@@ -57,7 +57,7 @@ const Nav = () => {
           {/* <img src='/logo.png' alt='logo' className={styles.logo}/> */}
           </a></Link>
     </div>
-
+<div>
           {/* <AddBusinessRoundedIcon sx={{ transform: "scale(2)" }} /> */}
           {isMatch ? (
             <>
@@ -76,27 +76,11 @@ const Nav = () => {
             </ul>
     </div>
 
-              {/* <Tabs
-                sx={{ marginLeft: "auto" }}
-                // indicatorColor="primary"
-                textColor="inherit"
-                value={value}
-                onChange={handleChange}
-              >
-                <Tab label="Home" value='1' href="/"></Tab>
-                <Tab label="Blogs" value='2' href="/blogs"></Tab>
-                <Tab label="Services" value='3' href="#services"></Tab>
-              </Tabs> */}
-
-            
-
-              {/* <Button sx={{ marginLeft: "auto", color: "white" }} variant="outlined" endIcon={<CallIcon />} href='/contact'>
-                Free Consultency
-              </Button> */}
+      
               
             </>
           )}
-      
+      </div>
       </AppBar>
     </React.Fragment>
   );
