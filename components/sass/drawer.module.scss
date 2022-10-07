@@ -1,0 +1,14 @@
+@use '../../sass/global' as c;
+
+.drawer {
+    .list {
+        padding:50px;
+        font-family: c.$fira;
+       
+        li {
+            font-family: c.$boldFont;
+            font-weight: 900;
+            font-family: c.$fira;
+        }
+    }
+}

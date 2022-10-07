@@ -1,0 +1,62 @@
+@use './global' as c;
+
+.contact {
+    position: absolute;
+    width: 100%;
+    height: auto;
+.container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .form {
+      
+        padding: 20px;
+        box-sizing: border-box;
+
+        h3 {
+            font-size: 20px;
+            color: c.$color3;
+        }
+    }
+    .details {
+        padding-left: 30px;
+        padding-bottom: 30px;
+        margin: 30px;
+        background-color:c.$color2;
+        border-radius: 15px;
+        color: white;
+        h4 {
+            margin:20px;
+           
+            
+        }
+        p {
+            font-size: 15px;
+            margin:0px;
+            padding:0px;
+            padding-left: 50px;
+            color:c.$color1;
+            
+        }
+    }
+}
+}
+
+
+
+@media (max-width:800px) {
+    .contact {
+        .container {
+            padding: 20px;
+            grid-template-columns: 100%;
+            .details {
+        padding-left: 10px;
+        margin: 10px;
+            }
+        }
+    }
+}

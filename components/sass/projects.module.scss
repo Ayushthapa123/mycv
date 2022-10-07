@@ -1,0 +1,347 @@
+@use '../../sass/_global.scss' as c;
+.projects {
+    width:100%;
+    height:auto;
+    padding:7%;
+    box-sizing: border-box;
+    // margin-top: 8px;
+    background-color:rgb(27, 27, 27);
+    color:white;
+    position: relative;
+
+    span {
+        font-size: 3.5rem;
+        color:yellow;
+        font-family: c.$boldFont;
+        position: relative;
+        left:-70px;
+        top:20px;
+    }
+
+    .project {
+        width:100%;
+        height:auto;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        .des {
+        b {
+            margin:10px;
+            color:rgb(184, 184, 235);
+           
+        }
+
+        h2 {
+            font-size: 45px;
+            font-family: c.$lightBold;
+            margin:10px;
+            margin-left: 5px;
+        }
+        button {
+           
+            background-color: rgb(0, 0, 0);
+            color:rgb(255, 255, 255);
+            padding:5px;
+            padding-left:10px;
+            padding-right: 10px;
+          
+            border:2px solid yellow;
+            border-radius: 5px;
+            margin:5px;
+
+        }
+        p {
+            font-family: c.$fira;
+        }
+        strong {
+            padding:5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: black;
+        }
+    }
+    .photos {
+        img {
+            width:100%;
+            height:230px;
+            object-fit: scale-down;
+            // border:2px solid rgb(240, 240, 238);
+            transition: all 0.3s linear 0s;
+            &:hover {
+                z-index: 3;
+                transform: scale(1.2);
+                
+            }
+           
+        }
+        .img1 {
+            position: relative;
+            top:-60px;
+            left:-10px;
+        }
+        .img2 {
+            position: relative;
+            top:-120px;
+            left:20px;
+        }
+
+    }
+}
+.moreon {
+    width:80%;
+    margin:auto;
+    text-align: center;
+    align-items: center;
+  
+    button {
+        font-size: 25px;
+        margin:5px;
+        padding:5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        color:white;
+        background-color: transparent;
+        i {
+            position: relative;
+            top:4px;
+        }
+      
+    }
+}
+}
+
+
+@media (max-width:1000px) {
+    .projects {
+        width:100%;
+        height:auto;
+        padding:7%;
+        box-sizing: border-box;
+ 
+    
+        span {
+            font-size: 3rem;
+            left:-30px;
+            top:20px;
+        }
+    
+        .project {
+            width:100%;
+            height:auto;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            margin-top: 50px;
+            margin-bottom: 70px;
+            .des {
+            b {
+                margin:10px;
+                color:rgb(184, 184, 235);
+               
+            }
+    
+            h2 {
+                font-size: 2.7rem;
+                font-family: c.$lightBold;
+                margin:10px;
+                margin-left: 5px;
+                z-index: 2;
+            }
+            button {
+               
+                background-color: rgb(0, 0, 0);
+                color:rgb(255, 255, 255);
+                padding:5px;
+                padding-left:10px;
+                padding-right: 10px;
+              
+                border:2px solid yellow;
+                border-radius: 5px;
+                margin:5px;
+    
+            }
+            p {
+                font-family: c.$fira;
+            }
+            strong {
+                padding:5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                background-color: black;
+            }
+        }
+        .photos {
+            img {
+                width:100%;
+                height:200px;
+                object-fit: scale-down;
+                // border:2px solid rgb(240, 240, 238);
+                transition: all 0.3s linear 0s;
+                &:hover {
+                    z-index: 3;
+                    transform: scale(1.2);
+                    
+                }
+               
+            }
+            .img1 {
+                position: relative;
+                top:-60px;
+                left:-10px;
+            }
+            .img2 {
+                position: relative;
+                top:-150px;
+                left:20px;
+            }
+    
+        }
+    }
+    .moreon {
+        width:80%;
+        margin:auto;
+        text-align: center;
+        align-items: center;
+      
+        button {
+            font-size: 25px;
+            margin:5px;
+            padding:5px;
+            padding-left: 12px;
+            padding-right: 12px;
+            color:white;
+            background-color: transparent;
+            i {
+                position: relative;
+                top:4px;
+            }
+          
+        }
+    }
+    }
+
+
+}
+
+
+
+@media (max-width:550px) {
+    .projects {
+        width:100%;
+        height:auto;
+        padding:4%;
+        box-sizing: border-box;
+        padding-top: 1%;
+        padding-bottom: 1%;
+ 
+    
+        span {
+            font-size: 2.5rem;
+            left:-10px;
+            top:20px;
+        }
+    
+        .project {
+            width:100%;
+            height:auto;
+            display: grid;
+            grid-template-columns: 100%;
+            margin-top: 20px;
+       
+         
+      
+            .des {
+            b {
+                margin:10px;
+                color:rgb(184, 184, 235);
+               
+            }
+    
+            h2 {
+                font-size: 2.7rem;
+                font-family: c.$lightBold;
+                margin:10px;
+                margin-left: 5px;
+                z-index: 2;
+            }
+            button {
+               
+                background-color: rgb(0, 0, 0);
+                color:rgb(255, 255, 255);
+                padding:5px;
+                padding-left:10px;
+                padding-right: 10px;
+              
+                border:2px solid yellow;
+                border-radius: 5px;
+                margin:5px;
+    
+            }
+            p {
+                font-family: c.$fira;
+            }
+            strong {
+                padding:5px;
+                padding-left: 15px;
+                padding-right: 15px;
+                background-color: black;
+            }
+        }
+        .photos {
+            width:80%;
+            margin:auto;
+            height:300px;
+
+            img {
+                width:100%;
+                margin:auto;
+                height:200px;
+                object-fit: scale-down;
+                // border:2px solid rgb(240, 240, 238);
+                transition: all 0.3s linear 0s;
+                &:hover {
+                    z-index: 3;
+                    transform: scale(1.2);
+                    
+                }
+               
+            }
+            .img1 {
+                position: relative;
+                top:20px;
+                left:-10px;
+            }
+            .img2 {
+                position: relative;
+                top:-90px;
+                left:20px;
+               
+            }
+    
+        }
+    }
+    .moreon {
+        width:80%;
+        margin:auto;
+        text-align: center;
+        align-items: center;
+      
+        button {
+            font-size: 25px;
+            margin:5px;
+            padding:5px;
+            padding-left: 12px;
+            padding-right: 12px;
+            color:white;
+            background-color: transparent;
+            i {
+                position: relative;
+                top:4px;
+            }
+          
+        }
+    }
+    }
+
+
+}
