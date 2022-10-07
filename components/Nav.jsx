@@ -45,19 +45,14 @@ const Nav = () => {
 
   return (
     <React.Fragment>
-      <AppBar elevation={0} className={styles.nav} id='nav'
+      <AppBar elevation={0}  
        sx={{ background: "transparent",
        padding:1,
        
     
     }} >
-     <div className={styles.logo}>
-          <Link href='/'><a>
-            Ayush Thapa
-          {/* <img src='/logo.png' alt='logo' className={styles.logo}/> */}
-          </a></Link>
-    </div>
-<div>
+ 
+
           {/* <AddBusinessRoundedIcon sx={{ transform: "scale(2)" }} /> */}
           {isMatch ? (
             <>
@@ -67,6 +62,14 @@ const Nav = () => {
             </>
           ) : (
             <>
+<nav className={styles.nav} id="nav">
+<div className={styles.logo}>
+          <Link href='/'><a>
+            Ayush Thapa
+          {/* <img src='/logo.png' alt='logo' className={styles.logo}/> */}
+          </a></Link>
+    </div>
+
 <div className={styles.lists}>
             <ul>
               <li><Link href='/'>Home</Link></li>
@@ -77,10 +80,10 @@ const Nav = () => {
     </div>
 
       
-              
+    </nav>   
             </>
           )}
-      </div>
+        
       </AppBar>
     </React.Fragment>
   );

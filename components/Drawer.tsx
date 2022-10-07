@@ -1,4 +1,11 @@
+
 import React, { useState } from "react";
+import Link from 'next/link';
+
+import styles from './sass/drawer.module.scss';
+
+
+
 import {
   Drawer,
   IconButton,
@@ -9,54 +16,72 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-
-import styles from './sass/drawer.module.scss';
-
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
     <React.Fragment>
+<div className={styles.mview} id='nav' >
+
+
+ <div className={styles.logo}>
+ <Link href='/'><a>
+            Ayush Thapa
+          {/* <img src='/logo.png' alt='logo' className={styles.logo}/> */}
+          </a></Link>
+  </div>
+
+<div className={styles.dcontainer}>
+
       <Drawer
-        anchor="left"
+      className={styles.drawer}
+       
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
         PaperProps={{
-            sx: { width: "70%", backgroundColor:"white"},
+            sx: { width: "70%",padding:"20px"
+          },
           }}
-
-          className={styles.drawer}
       >
-        <List sx={{color:"whitesmoke"}} className={styles.list}>
+        <List className={styles.list}>
       
+         
+{/* <hr/> */}
+           
+
+
             <ListItemButton>
               <ListItemIcon>
-                <ListItemText sx={{color:'black',fontFamily:`'Anton', sans-serif;`}}>Home</ListItemText>
+                <ListItemText><Link href='/'><a>Home</a></Link></ListItemText>
               </ListItemIcon>
             </ListItemButton>
 
             <ListItemButton>
               <ListItemIcon>
-                <ListItemText sx={{color:'black'}}>Blogs</ListItemText>
+                <ListItemText><Link href='/'><a>Blogs</a></Link></ListItemText>
               </ListItemIcon>
             </ListItemButton>
-     
+
             <ListItemButton>
               <ListItemIcon>
-                <ListItemText sx={{color:'black'}}>Services</ListItemText>
+                <ListItemText><Link href='/'><a>My Lab</a></Link></ListItemText>
               </ListItemIcon>
             </ListItemButton>
+  
 
-
-    
         </List>
       </Drawer>
       <IconButton
-        sx={{ color: "white", marginLeft: "auto", marginTop:"-30px" }}
+        sx={{ color: "white", fontSize:'large',}}
         onClick={() => setOpenDrawer(!openDrawer)}
+        
       >
-        <MenuIcon fontSize="large" />
+        <MenuIcon sx={{ transform: "scale(1.4)", color:"white"}}/>
       </IconButton>
+
+
+      </div>
+  </div>
     </React.Fragment>
   );
 };
