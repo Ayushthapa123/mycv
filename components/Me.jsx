@@ -27,7 +27,7 @@ export default function Me() {
     </div>
 
     <div className={styles.des}>
-      <p>I love exploring and creating 🚀 I'm a lifelong learner 🎓 
+      <p>I love exploring and creating 🚀 I am a lifelong learner 🎓 
         and <br/>I am Javascript Enthusiast person who loves to create Awesome Websites⚛ </p>
         {/* <span><a href="#">More</a></span> */}
     </div>

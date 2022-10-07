@@ -167,10 +167,10 @@ type='submit'
     <div className={styles.details}>
 <h4>Contact Details</h4>
 <h2>Get In Touch</h2>
-<p>We'd love to hear your comments, feedback and thoughts.
+<p>We would love to hear your comments, feedback and thoughts.
    Sometimes email can feel a little impersonal and we love 
    to get to know our clients personally, so please fill out 
-   the form below and we'll give you a call!</p>
+   the form below and we will give you a call!</p>
 
 <h4><MyLocationIcon/> Our Location</h4>
 <p>Kupondole, Lalitpur, Nepal</p>

@@ -38,7 +38,7 @@ export default function Projects() {
 <span>&lt;02/&gt;</span>
 <div className={styles.project}>
   <div className={styles.des}>
- <b>CLIENT'S PROJECT</b>   
+ <b>CLIENT&#39;S PROJECT</b>   
  <h2>Peace4people.org</h2>
  <button>Next.js</button>
  <button>Contentful</button>
@@ -65,7 +65,7 @@ export default function Projects() {
 <span>&lt;03/&gt;</span>
 <div className={styles.project}>
   <div className={styles.des}>
- <b>CLIENT'S PROJECT</b>   
+ <b>CLIENT&#39;S PROJECT</b>   
  <h2>Alaskabodysculpting.com</h2>
  <button>Next.js</button>
  <button>Contentful</button>
@@ -90,7 +90,7 @@ export default function Projects() {
 <span>&lt;04/&gt;</span>
 <div className={styles.project}>
   <div className={styles.des}>
- <b>CLIENT'S PROJECT</b>   
+ <b>CLIENT&#39;S PROJECT</b>   
  <h2>More Mindful</h2>
  <button>Next.js</button>
  <button>Contentful</button>
