@@ -1,0 +1,21 @@
+.mylab {
+    width:100%;
+    min-height:100vh;
+    background-color: rgb(27,27,27);
+    color:white;
+    .links {
+   
+        button {
+            padding:10px;
+            border:1px solid rgb(207, 175, 175);
+            border-radius: 5px;
+            color:rgb(230, 211, 211);
+            margin:10px;
+            background-color: rgb(19, 13, 13);
+            font-size: 15px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
