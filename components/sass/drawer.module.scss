@@ -1,20 +1,31 @@
 
 @use '../../sass/global' as c;
-.list {
-    hr {
-        color:rgb(252, 240, 240);
-        background-color: rgb(240, 214, 214);
-    }
-    ul {
-        margin:0px;
-        padding:0px;
-        li {
+
+
+
+
+    .list {
+        margin-top: 50px;
+       
+        ul {
             margin:0px;
-        padding:0px;
-        font-family: c.$boldFont;
+            padding:0px;
+          
+    
+            li {
+                margin:0px;
+            padding:0px;
+            font-family: c.$boldFont;
+            list-style: none;
+            color:white;
+            text-align: center;
+            margin:30px;
+            }
         }
     }
-}
+
+
+
 
 // .toggler {
   
@@ -45,16 +56,5 @@
         }
     }
 
-    .dcontainer {
-        position: relative;
-       
-        top:10px;
-        .toggler {
-            position: relative;
-            right:0;
-            top:30px;
-            color:white;
-        }
-    }
 }
 

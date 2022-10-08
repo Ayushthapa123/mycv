@@ -47,24 +47,29 @@ export async function getStaticProps({ params }) {
 export default function Article({ article }) {
   if (!article) return <div>404</div>;
 
-
+console.log(article.fields)
 
   return (
     <div className={styles.blogpost}>
 
 <Head>
   <title>{article.fields.title}</title>
+  <link rel="icon" href="/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true'/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&family=Fira+Sans+Condensed&family=Kaushan+Script&family=Roboto:wght@300&family=Squada+One&family=Tapestry&family=Teko&display=swap" rel="stylesheet" /> 
+  
  
 </Head>
 
-<Nav2/>
-<Breadcrumbs slug={article.fields.slug}/>
+{/* <Nav2/> */}
+{/* <Breadcrumbs slug={article.fields.slug}/> */}
 
 {/* <BlogLayout> */}
 <div className={styles.blog}>
 <div className={styles.header}>
 <h1>{article.fields.title}</h1>
-<p>Published date: {article.fields.date}| Written by:{article.fields.author} </p>
+<p>{article.fields.date} </p>
 </div>
 
    <section className={styles.content}>

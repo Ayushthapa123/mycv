@@ -39,7 +39,7 @@ const Home= () => {
       
       const nav=document.querySelector("#nav");
       let yheight =window.pageYOffset;
-
+if(nav) {
       if(yheight>200) {
         nav.style.transform='translateY(-300px)';
         nav.style.backgroundColor=' #9e5f52 ';
@@ -61,7 +61,7 @@ const Home= () => {
       }
     
    
-   
+    }
       window.addEventListener('scroll', debounce(handleScroll));
      
     },[]);

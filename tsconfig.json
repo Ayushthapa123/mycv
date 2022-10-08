@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/blogs/[slug].jsx", "pages/blogs/index.jsx", "components/Services.jsx", "components/Talk.jsx", "components/Pricing.tsx", "components/Nav.jsx", "components/Nav.jsx", "pages/index.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/blogs/[slug].jsx", "pages/blogs/index.jsx", "components/Services.jsx", "components/Talk.jsx", "components/Pricing.tsx", "components/Nav.jsx", "components/Nav.jsx", "pages/index.jsx", "components/Nav2.jsx"],
   "exclude": ["node_modules"]
 }

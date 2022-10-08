@@ -26,7 +26,7 @@ export default function IconBreadcrumbs(props) {
           
         <Link
           underline="hover"
-          sx={{ display: 'flex', alignItems: 'center' }}
+          sx={{ display: 'flex', alignItems: 'center' ,color:"blue"}}
           color="inherit"
           href="/"
         >
@@ -46,7 +46,7 @@ export default function IconBreadcrumbs(props) {
           </a>
         </Link>
         <Typography
-          sx={{ display: 'flex', alignItems: 'center' }}
+          sx={{ display: 'flex', alignItems: 'center',color:"blue" }}
           color="text.primary"
         >
           {props.slug}

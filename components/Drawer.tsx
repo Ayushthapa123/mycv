@@ -39,17 +39,22 @@ const DrawerComp = () => {
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
         PaperProps={{
-            sx: { width: "70%",padding:"20px"
+            sx: { width: "70%",padding:"20px",backgroundColor:"rgb(27,27,27)"
           },
           }}
       >
+<div className={styles.list}>
+<ul>
+  <li><Link href='/'><a>Home</a></Link></li>
+  <li><Link href='/blogs'><a>Blogs</a></Link></li>
+  <li><Link href='/mylab'><a>My Lab</a></Link></li>
+</ul>
+
+</div>
+
+{/* 
         <List className={styles.list}>
-      
-         
-{/* <hr/> */}
-           
-
-
+          
             <ListItemButton>
               <ListItemIcon>
                 <ListItemText><Link href='/'><a>Home</a></Link></ListItemText>
@@ -68,11 +73,12 @@ const DrawerComp = () => {
               </ListItemIcon>
             </ListItemButton>
   
+        </List> */}
 
-        </List>
+
       </Drawer>
       <IconButton
-        sx={{ color: "white", fontSize:'large',}}
+        sx={{ fontSize:'large',}}
         onClick={() => setOpenDrawer(!openDrawer)}
         
       >

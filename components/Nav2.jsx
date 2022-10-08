@@ -62,7 +62,7 @@ const Nav = () => {
             </>
           ) : (
             <>
-<nav className={styles.nav} id="nav">
+<nav className={styles.nav2} >
 <div className={styles.logo}>
           <Link href='/'><a>
             Ayush Thapa
@@ -73,7 +73,7 @@ const Nav = () => {
 <div className={styles.lists}>
             <ul>
               <li><Link href='/'>Home</Link></li>
-              <li><Link href='/blogs'>Blogs</Link></li>
+              <li><Link href='/'>Blogs</Link></li>
               <li><Link href='/'>My Lab</Link></li>
              
             </ul>
