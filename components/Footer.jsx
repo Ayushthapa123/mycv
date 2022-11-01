@@ -18,7 +18,7 @@ export default function Footer() {
     </div>
 
     <div>
-<span><b><FaMobile/></b>+977-9846793894</span>
+<span><b><FaMobile/></b>+977-9811493707</span>
     </div>
 </div>
 <div className={styles.social}>

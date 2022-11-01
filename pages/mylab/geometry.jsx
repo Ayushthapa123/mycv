@@ -39,7 +39,7 @@ function debounce(func, wait=3,immediate=true) {
         let offsettop=ourdiv.offsetTop;
         let scrollheight =window.pageYOffset;
         
-        console.log("pageyoffset",scrollheight);
+        // console.log("pageyoffset",scrollheight);
         
         
         setHeight(height);
@@ -53,6 +53,37 @@ function debounce(func, wait=3,immediate=true) {
   }
     window.addEventListener('scroll', debounce(handleScroll));
  
+
+
+
+function mutate(a) {
+    let b=[];
+    for (let i=0;i<a.length;i++) {
+        if(i==0) {
+            b[0]=a[0]+a[1];
+        }
+        else if(i==a.length-1) {
+            b[i]=a[i-1]+a[i];
+
+        }
+        else {
+            b[i]=a[i-1]+a[i]+a[i+1];
+        }
+
+    }
+
+    return b;
+
+}
+
+let mutated=mutate([4,0,1,-2,3]);
+
+console.log(mutated);
+
+
+
+
+
 
 
 },[])
