@@ -19,7 +19,7 @@ export default function PureComponent() {
 
 <p>References: <a href="https://www.geeksforgeeks.org/what-is-a-pure-functional-component-in-reactjs/">https://www.geeksforgeeks.org/what-is-a-pure-functional-component-in-reactjs/</a></p>
 
-<p>"export default memo(Index);"</p>
+<p>export default memo(Index);</p>
 
 
 <h2>Higher-Order Components</h2>
